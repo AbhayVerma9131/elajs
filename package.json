@@ -1,0 +1,65 @@
+{
+  "name": "elajs",
+  "version": "1.0.0",
+  "description": "The AI-powered frontend framework with voice control, smart debugging, and hybrid rendering (SSR + SSG + CSR)",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./core": "./src/core/component.js",
+    "./state": "./src/core/state.js",
+    "./router": "./src/router/index.js",
+    "./voice": "./src/voice/index.js",
+    "./ai": "./src/ai-engine/generator.js",
+    "./debugger": "./src/ai-engine/debugger.js",
+    "./ssr": "./src/ssr/index.js",
+    "./ssg": "./src/ssg/index.js",
+    "./devtools": "./src/devtools/index.js",
+    "./plugins": "./src/plugins/index.js"
+  },
+  "scripts": {
+    "dev": "node --experimental-vm-modules scripts/dev.js",
+    "build": "node scripts/build.js",
+    "test": "node --experimental-vm-modules scripts/test.js"
+  },
+  "keywords": [
+    "framework",
+    "frontend",
+    "javascript",
+    "ai",
+    "voice",
+    "voice-control",
+    "ssr",
+    "ssg",
+    "static-site-generator",
+    "server-side-rendering",
+    "reactive",
+    "components",
+    "spa",
+    "ela",
+    "elajs",
+    "router",
+    "state-management",
+    "devtools",
+    "smart-debug"
+  ],
+  "author": "ELA.js Contributors",
+  "license": "MIT",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/elajs.git"
+  },
+  "homepage": "https://github.com/yourusername/elajs#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/elajs/issues"
+  }
+}

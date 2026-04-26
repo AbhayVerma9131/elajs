@@ -1,0 +1,9 @@
+examples/
+docs/
+dist/
+scripts/
+*.test.js
+.github/
+.DS_Store
+.env
+*.tgz

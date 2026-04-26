@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELA.js — AI-Powered Frontend Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #080c14;
+      color: #e8f4f8;
+      font-family: 'Sora', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    #app { min-height: 100vh; }
+    /* Loading state */
+    .ela-loading {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; flex-direction: column; gap: 1rem;
+    }
+    .ela-loading-text {
+      font-family: 'Space Mono', monospace;
+      color: #00f5a0; font-size: 1.2rem; letter-spacing: 2px;
+    }
+    .ela-loading-bar {
+      width: 200px; height: 2px; background: rgba(0,245,160,0.1);
+      border-radius: 1px; overflow: hidden;
+    }
+    .ela-loading-fill {
+      height: 100%; background: linear-gradient(90deg, #00f5a0, #00d4ff);
+      animation: ela-load 1.5s ease-in-out infinite;
+    }
+    @keyframes ela-load {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(200%); }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="ela-loading">
+      <div class="ela-loading-text">⚡ ELA.js</div>
+      <div class="ela-loading-bar"><div class="ela-loading-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- In a real setup, use a bundler (Vite/Rollup) to bundle ela.js -->
+  <!-- For development, use: vite / node with --experimental-vm-modules -->
+  <script type="module" src="./full-app.js"></script>
+</body>
+</html>
